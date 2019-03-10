@@ -45,3 +45,17 @@ Spring + SpringMVC + MyBatis + Redis + bootstarp + Js
    * 进行以上秒杀对象的Redis缓存时需要进行对象的序列化与反序列化操作。其使用到了第三方的框架protostuff，这个序列化操作更快而且数据大小可以达到原来的1/5 - 1/10左右。
 3. Spring声明式事务方法优化，在Service层的秒杀方法时，需要将秒杀成功信息插入到秒杀成功明细表中，然后再进行秒杀商品表的减库存操作。因为插入操作不具有索引条件，故在进行减库存的更新操作时才会获取行级锁，从而减少锁持有的时间，加快并发执行速度；
 4. 使用存储过程（不太推荐），将秒杀成功信息插入到秒杀成功明细表和减库存的操作写成存储过程，从而也就避免了使用Spring声明式事务方法所带来的并发执行速度慢的缺点。
+
+## 项目页面
+### 秒杀列表
+![](https://ws1.sinaimg.cn/large/005HAhlegy1g0y4jiiircj30vu0aogm1.jpg)
+### 显示弹出层
+![](https://ws1.sinaimg.cn/large/005HAhlegy1g0y4jnz33xj30uj075t8p.jpg)
+### 秒杀成功
+![](https://ws1.sinaimg.cn/large/005HAhlegy1g0y4jq6wpbj30vw05c74d.jpg)
+### 重复秒杀
+![](https://ws1.sinaimg.cn/large/005HAhlegy1g0y4jsgazbj30vy0580st.jpg)
+### 秒杀结束
+![](https://ws1.sinaimg.cn/large/005HAhlegy1g0y4kc31zfj30vy05haa7.jpg)
+### 倒计时等待秒杀
+![](https://ws1.sinaimg.cn/large/005HAhlegy1g0y4kjhevoj30w10583yu.jpg)
