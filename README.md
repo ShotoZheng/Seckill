@@ -4,7 +4,7 @@ Java高并发秒杀系统 基于 SSM + Redis + bootstrap + Js 实现
 ## 项目使用技术
 Spring + SpringMVC + MyBatis + Redis + bootstarp + Js
 
-## 系统实现大体过程：
+## 系统实现过程：
 
 ### 数据库：
 创建两个数据库表，秒杀库存表和秒杀成功明细表。
