@@ -51,6 +51,8 @@ Spring + SpringMVC + MyBatis + Redis + bootstarp + Js
 ![](https://ws1.sinaimg.cn/large/005HAhlegy1g0y4jiiircj30vu0aogm1.jpg)
 ### 显示弹出层
 ![](https://ws1.sinaimg.cn/large/005HAhlegy1g0y4jnz33xj30uj075t8p.jpg)
+### 开始秒杀
+![](https://ws1.sinaimg.cn/large/005HAhlegy1g0y4to7lccj30vu05faa3.jpg)
 ### 秒杀成功
 ![](https://ws1.sinaimg.cn/large/005HAhlegy1g0y4jq6wpbj30vw05c74d.jpg)
 ### 重复秒杀
